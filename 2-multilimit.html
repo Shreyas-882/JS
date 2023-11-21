@@ -1,0 +1,28 @@
+<html>
+    <body>
+        <h1>Multiplication Table</h1>
+        Enter Number:
+        <input type="number" id="n1" />
+        <br>
+        Enter Limit:
+        <input type="number" id="n2"/>
+
+        <br>
+        <input type="button" value="Submit" onclick="Multi()"/>
+    </body>
+    <script>
+        function Multi()
+        {
+            var a=document.getElementById("n1").value;
+            var b=document.getElementById("n2").value;
+
+            for(var i=1;i<=b;i++)
+            {
+                document.write("\n "+a+" X "+i+ " = "+(a*i));
+                document.write("<br>");
+            }
+            
+           
+        }
+    </script>
+</html>

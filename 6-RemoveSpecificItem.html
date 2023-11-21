@@ -1,0 +1,22 @@
+<html>
+    <body>
+
+    </body>
+    <script>
+    function Remove(Array,n)
+    {
+        const newArray=[];
+        for(let i=0;i<Array.length;i++)
+        {
+            if(Array[i]!==n)
+            {
+                newArray.push(Array[i]);
+            }
+        }
+        return newArray;
+    }
+    const result=Remove([1,2,3,4,5],2);
+    document.write(result);
+    </script>
+    
+</html>

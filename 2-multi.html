@@ -1,0 +1,19 @@
+<html>
+    <body>
+        <h1>Multiplication Table</h1>
+        Enter Number:
+        <input type="text" id="m1"/>
+        <input type="button" value="submit" onclick="Mul()"/>
+    </body>
+    <script>
+        function Mul()
+        {
+            var a=document.getElementById("m1").value;
+            for(var i=1;i<11;i++)
+            {
+                document.write("\n "+a+" X "+i+ " = "+(a*i));
+                document.write("<br>");
+            }
+        }
+    </script>
+</html>

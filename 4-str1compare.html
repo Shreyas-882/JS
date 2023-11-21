@@ -1,0 +1,33 @@
+<html>
+    <body>
+      
+    </body>
+    <script>
+       
+            const string1 = 'JavaScript Program';
+            const string2 = 'javascript program';
+            const result = string1.toUpperCase() === string2.toUpperCase();
+
+            if(result)
+             {
+                document.write('The strings are similar.');
+             } 
+             else 
+             {
+                document.write('The strings are not similar.');
+             
+            }
+
+            const result1 = string1.localeCompare(string2, undefined, { sensitivity: 'base' });
+
+            if(result1 == 0) 
+            {
+                document.write('\nThe strings are similar.');
+            } 
+            else
+             {
+                document.write('The strings are not similar.');
+             }
+             </script>
+  
+</html>
